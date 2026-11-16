@@ -1,0 +1,12 @@
+﻿namespace Demo.PL.Models
+{
+    public class RolesViewModel
+    {
+        public string? Id { get; set; }
+        public string Name { get; set; }
+        public RolesViewModel()
+        {
+            Id = Guid.NewGuid().ToString();
+        }
+    }
+}

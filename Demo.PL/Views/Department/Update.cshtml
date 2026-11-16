@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Update";
+}
+
+<h1>@Model.Name Update</h1>
+
+<div class="row">
+    <div class="col-md-12">
+        <div asp-validation-summary="All"></div>
+        <form asp-action="Update">
+            <partial name="PartialView/CreateAndUpdatePartialView" />
+            <input type="submit" value="Update" class="btn btn-primary" />
+            <a class="btn btn-secondary" asp-action="Index">Back</a>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
